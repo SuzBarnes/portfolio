@@ -1,10 +1,47 @@
 <!DOCTYPE html>
 <html>
 <title>Contact Details</title>
+<header><nav> <a href=file:///home/suzie/Projects/portfolio/index.html>Home</a></nav><a href="file:///home/suzie/Projects/portfolio/pages/projects.html">Projects</a> </nav> 
+    <figure><img src="images/Sbarnes.jpg"
+        width="150"
+        height="150"></header>
 <body>
-    <ol> <li> Phone Number
+    <p>If you would like to get in touch, please contact me via the following ways:</p>
+    <ol> <li> Phone Number: +44(0)
     </li>
-<li> e-mail address</li></ol>
+<li> e-mail address:</li></ol></p>
+<br />
+<p> Please leave your details in the following form, and I'll get back to you as soon as I can:
+    <form>
+        <fieldset>
+            <legend>Your Details</legend>
+            <label for="firstname">First Name</label>
+            <input id="firstname" type="text">
+            <br />
+            <br />
+            <label for="surname">Surname</label>
+            <input id="surname" type="text">
+            <br />
+            <br />
+            <label for="email">e-mail address</label>
+            <input id="email" type="text">
+            <br />
+            <br />
+            <label for="reasonforcontact">Reason for Contact: 
+            <select name="reasonforcontact">
+                <option value="Select" selected>Please select reason for contact</option>
+                <option value="Enquiry" selected>Enquiry</option>
+                <option value="Job interview" selected>Job Interview</option>
+                <option value="Job offer" selected>Job Offer</option>
+            </select>
+            </label><br /><br />
+            <label for="other">Anything else?</label>
+            <input id="other" type="text">
+            <br /> <br />
+            <input type="submit" name="submit" value="Submit">
+        </fieldset>
+    </form>
+</p>
 </body>
 
 </html>
