@@ -1,5 +1,76 @@
+/*Mobile Devices*/
+@media(max-width: 500px){
+    .nav {
+        height:100px;
+    }
+}
 
-*{background-color: white;
+.parent{
+    display: grid;
+    grid-template-areas:
+        "logo nav nav"
+        "portfolio portfolio portfolio"
+        "about about about"
+        "contact contact contact"
+        "footer footer footer";
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px 10px; /*row, column gaps*/
+    grid-template-columns: minmax(500px, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.logo{
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    justify-self: start;
+    align-self: end;
+}
+
+.nav{
+    grid-column: 2 / span 4;
+    grid-row: 1 / 1;
+}
+
+.portfolio{
+    grid-column: 2 / span 4;
+    grid-row: 2 / 3;
+    
+}
+
+/*flexbox section of portfolio*/
+.portfolio--flex--table
+    {display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    }
+
+.child{
+    width: 32%;
+    padding-bottom: 16%;
+    margin-bottom: 2%;
+    position: relative;
+}
+/*back to grid*/
+.about{
+    grid-column: 2 / span 4;
+    grid-row: 3 / 4;
+}
+.contact{
+    grid-column: 2/ span 4;
+    grid-row: 4 / 5;
+}
+.footer{
+    grid-column: 1 / span 4;
+    grid-row: 5 / 6;
+    align-items: start;
+    justify-content: end;
+}
+
+
+*{background-color: rgb(238, 243, 174);
     color: #61A4BC;
             font-family: "Caveat", cursive;
             font-size:30px;
@@ -33,5 +104,4 @@ padding: 10px;
  figure {display:inline-block;
     
 }
-
 
