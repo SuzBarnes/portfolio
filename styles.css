@@ -17,12 +17,12 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 15px 10px; /*row, column gaps*/
     grid-template-columns: minmax(500px, 1fr);
-    justify-items: center;
-    align-items: center;
+    justify-items: start;
+    align-items: start;
 }
 
 .logo{
-    grid-column: 1 / 1;
+    grid-column: 1 / 2;
     grid-row: 1 / 1;
     justify-self: start;
     align-self: end;
@@ -34,11 +34,13 @@
 }
 
 .portfolio{
-    grid-column: 2 / span 4;
+    grid-column: 1 / span 4;
     grid-row: 2 / 3;
-    
-}
 
+}
+#portfolio {
+    margin:auto;
+}
 /*flexbox section of portfolio*/
 .portfolio--flex--table
     {display:flex;
@@ -53,13 +55,17 @@
     margin-bottom: 2%;
     position: relative;
 }
+
+
 /*back to grid*/
 .about{
-    grid-column: 2 / span 4;
+    grid-column: 1 / span 4;
     grid-row: 3 / 4;
+    max-width: 65%;
+    margin:auto;
 }
 .contact{
-    grid-column: 2/ span 4;
+    grid-column: 1/ span 4;
     grid-row: 4 / 5;
 }
 .footer{
@@ -70,19 +76,20 @@
 }
 
 
-*{background-color: rgb(238, 243, 174);
-    color: #61A4BC;
-            font-family: "Caveat", cursive;
+*{
+    background-color: rgb(147, 181, 198);
+        color: #FFE3E3;
+             font-family: 'Lora', serif;
             font-size:30px;
             }
     
 h1, h2, h3, h4, h5 {
-    color: #5B7DB1;
+    color: #FFE3E3;
 
 }
 
 h1{ font-size: 45px;}
-h2{font-size: 40px;}
+h2{font-size: 45px;}
 
 
 #link:hover
@@ -95,7 +102,7 @@ a::before{
  }
 
  p {
-   background-color:#F7E2E2;
+   background-color:rgb(228, 216, 220, .5);
 border: 10px solid #61A4BC;
 margin: 20px;
 padding: 10px;
