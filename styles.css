@@ -14,14 +14,17 @@
         "contact contact contact"
         "footer footer footer";
 
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 15px 10px; /*row, column gaps*/
+    height: 100vh;
     grid-template-columns: minmax(500px, 1fr);
+    column-gap: 50px;
+    row-gap: 50px;
     justify-items: start;
     align-items: start;
 }
 
 .logo{
+    grid-area: logo;
     grid-column: 1 / 2;
     grid-row: 1 / 1;
     justify-self: start;
@@ -29,12 +32,16 @@
 }
 
 .nav{
-    grid-column: 2 / span 4;
+    grid-area: nav;
+    grid-column: 2 / span 3;
     grid-row: 1 / 1;
+    justify-items: center;
+    align-items: center;
 }
 
 .portfolio{
-    grid-column: 1 / span 4;
+    grid-area: portfolio;
+    grid-column: 1 / span 3;
     grid-row: 2 / 3;
 
 }
@@ -51,25 +58,56 @@
 
 .child{
     width: 32%;
-    padding-bottom: 16%;
-    margin-bottom: 2%;
+    padding-bottom: 0;
+    margin-bottom: 0;
     position: relative;
 }
 
+.overlay {
+    position:absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    width: 200px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.text {
+    color:white;
+    font-size:20px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.child:hover .overlay {
+    opacity: 1;
+}
 
 /*back to grid*/
 .about{
-    grid-column: 1 / span 4;
+    grid-area: about;
+    grid-column: 1 / span 3;
     grid-row: 3 / 4;
     max-width: 65%;
     margin:auto;
 }
 .contact{
-    grid-column: 1/ span 4;
+    grid-area:contact;
+    grid-column: 1/ span 3;
     grid-row: 4 / 5;
+    max-width: 65%;
+    margin:auto;
 }
 .footer{
-    grid-column: 1 / span 4;
+    grid-area:footer;
+    grid-column: 1 / span 3;
     grid-row: 5 / 6;
     align-items: start;
     justify-content: end;
@@ -95,7 +133,7 @@ h2{font-size: 45px;}
 #link:hover
     {color:#1A132F}
 
-:visited {color:#db91bf}
+:visited {color:#C9CCD5}
 
 a::before{
     content: "→";
