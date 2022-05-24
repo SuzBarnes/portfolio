@@ -17,9 +17,11 @@ h1, h2, h3, h4, h5 {
 }
 .box1{background: #FFE3E3}
 
-.box2{ background: #FFE3E3;}
+.box2{ background: #E4D8DC;
+    padding: 0 7px 0 7px;
+    border-radius: 10px;}
 
-.box3{ background: #C9CCD5;
+.box3{ background: #FFE3E3;
 }
 
 h1{ font-size: 50px;
@@ -134,17 +136,15 @@ h2{font-size: 45px;}
     grid-row: 3 / 4;
     max-width: 65%;
     margin:auto;
-    background: #FFE3E3;
     padding: 0 7px 0 7px;
     border-radius: 10px;
 }
 .contact{
     grid-area:contact;
-    grid-column: 1/ span 3;
+    grid-column: 1 / span 3;
     grid-row: 4 / 5;
     max-width: 65%;
     margin:auto;
-    background: #C9CCD5;
     padding: 0 7px 0 7px;
     border-radius: 10px;
 }
@@ -153,8 +153,8 @@ h2{font-size: 45px;}
     grid-area:footer;
     grid-column: 1 / span 3;
     grid-row: 5 / 6;
-    align-items: start;
-    justify-content: start;
+    align-items: center;
+    justify-content: center;
 }
 
 
