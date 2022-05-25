@@ -118,13 +118,27 @@ h2{font-size: 45px;}
 }
 
 .text {
-    color: rgb(255, 227, 227);
+    color: #1A132F;
+    background: #C9CCD5;
     font-size:20px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+}
+
+.button{
+    display:block;
+    height:auto;
+    width:auto;
+    color: #1A132F;
+    background: #C9CCD5;
+    border: 2px solid #1A132F;
+    border-radius: 10px;
+    text-align: center;
+    font:bold;
+    font-size: 20px;
 }
 
 .child:hover .overlay {
@@ -163,7 +177,9 @@ h2{font-size: 45px;}
 
 a[href]:hover{color: #E4D8DC;}
 
-:visited {color:#C9CCD5}
+:visited {
+    color:#2fa8a2;
+}
 
  figure {display:inline-block;
 }
