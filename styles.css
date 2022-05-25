@@ -22,6 +22,8 @@ h1, h2, h3, h4, h5 {
     border-radius: 10px;}
 
 .box3{ background: #FFE3E3;
+    border-radius: 10px;
+    padding: 0 7px 0 7px;
 }
 
 h1{ font-size: 50px;
