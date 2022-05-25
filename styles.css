@@ -4,6 +4,12 @@
         height:100px;
     }
 }
+@media screen and (min-width:768px) {
+    .box1 .box2 .box3 {
+        height:auto;
+}
+    
+}
 * {
     background: rgb(147, 181, 198);
         color: #1A132F;
