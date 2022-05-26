@@ -7,9 +7,9 @@
 @media screen and (min-width:768px) {
     .box1 .box2 .box3 {
         height:auto;
+    } 
 }
-    
-}
+
 * {
     background: rgb(147, 181, 198);
         color: #1A132F;
@@ -32,7 +32,6 @@ h1, h2, h3, h4, h5 {
 .box3{ background: #FFE3E3;
     border-radius: 10px;
     padding: 1px 7px 1px 7px;
-    text-align: ;
 }
 
 ol {list-style-position:inside;}
@@ -82,14 +81,9 @@ h2{font-size: 45px;}
     grid-column: 1 / span 3;
     grid-row: 2 / 3;
     max-width: 75%;
-    
-    
     width:auto;
     height: auto;
     border-radius: 10px;
-
-}
-#portfolio {
     margin:auto;
 }
 /*flexbox section of portfolio*/
@@ -119,8 +113,8 @@ h2{font-size: 45px;}
     bottom: 0;
     left: 0;
     right: 0;
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     opacity: 0;
     transition: .5s ease;
     background-color: rgb(201, 204, 213);
@@ -172,6 +166,8 @@ h2{font-size: 45px;}
     grid-row: 4 / 5;
     max-width: 75%;
     margin:auto;
+    height:auto;
+    width: 100%;
 }
 
 .footer{
