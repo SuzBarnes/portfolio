@@ -10,41 +10,49 @@
     } 
 }
 
-* {
-    background: rgb(147, 181, 198);
-        color: #1A132F;
-             font-family: 'Lora', serif;
-            font-size:35px;
-            }
-    
-h1, h2, h3, h4, h5 {
-    color: #1A132F;
+body{background-color: #293462;
+    color:rgb(68, 68, 68);
+    font-family: 'Gochi Hand', cursive;
+    font-family: 'Lora', serif;
+    font-size:35px;
+     }
+
+h1 {color: #FFC947;
+    font-family: 'Gochi Hand', cursive;}
+
+
+h2, h3, h4, h5 {
+    color: rgb(68, 68, 68);
   text-align: center;
+  font-family: 'Gochi Hand', cursive;
 }
-.box1{background: #FFE3E3;
-    padding: 1px 7px 1px 7px;
+
+
+.box1{background: #FFF5EB;
+    padding: 25px 25px 25px 25px;
     border-radius: 10px;}
 
-.box2{ background: #E4D8DC;
-    padding: 1px 7px 1px 7px;
+.box2{ background: #FFF5EB;
+    padding: 25px 25px 25px 25px;
     border-radius: 10px;}
 
-.box3{ background: #FFE3E3;
+.box3{ background: #FFF5EB;
     border-radius: 10px;
-    padding: 1px 7px 1px 7px;
+    padding: 25px 25px 25px 25px;
 }
 
 ol {list-style-position:inside;}
 
-h1{ font-size: 50px;
+h1{ font-size: 100px;
 }
-h2{font-size: 45px;}
+h2, h3{font-size: 70px;}
 
 
 .parent{
     display: grid;
     grid-template-areas:
         "logo nav nav"
+        "box0 box0 box0"
         "portfolio portfolio portfolio"
         "about about about"
         "contact contact contact"
@@ -76,10 +84,20 @@ h2{font-size: 45px;}
     font-size: 50px;
 }
 
+.box0{
+    grid-area: box0;
+    grid-column: 1 / span 3;
+    grid-row: 2 / 3;
+    max-width: 75%;
+    width:auto;
+    height: auto;
+    border-radius: 10px;
+    margin:auto;;
+}
 #portfolio{
     grid-area: portfolio;
     grid-column: 1 / span 3;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
     max-width: 75%;
     width:auto;
     height: auto;
@@ -92,7 +110,7 @@ h2{font-size: 45px;}
     flex-wrap:wrap;
     justify-content: center;
     align-items: center;
-    background: #FFE3E3;
+    background: #FFF5EB;
     padding: 0 7px 0 7px;
     border-radius: 10px;
     }
@@ -102,7 +120,7 @@ h2{font-size: 45px;}
     padding-bottom: 0;
     margin-bottom: 0;
     position: relative;
-    background: #FFE3E3;
+    background: #FFF5EB;
     padding: 0 7px 0 7px;
     border-radius: 10px;
 }
@@ -154,7 +172,7 @@ h2{font-size: 45px;}
 .about{
     grid-area: about;
     grid-column: 1 / span 3;
-    grid-row: 3 / 4;
+    grid-row: 4 / 5;
     max-width: 75%;
     margin:auto;
     padding: 0 7px 0 7px;
@@ -163,19 +181,56 @@ h2{font-size: 45px;}
 .contact{
     grid-area:contact;
     grid-column: 1 / span 3;
-    grid-row: 4 / 5;
+    grid-row: 5 / 6;
     max-width: 75%;
     margin:auto;
     height:auto;
     width: 100%;
 }
+.social-media-icons{
+    position:fixed;
+    top:95%;
+    right:0%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform:translateY(-50%);
+    transform: translateY(-50%);
+    color:white;    
+}
 
+.social-media-icons a{
+    display:block;
+    text-align:center;
+    padding:16px;
+    transition: all 0.5s ease;
+    color: white;
+    font-size: 50px;
+    float:right;
+}
+
+.linkedin{
+    background:#0E76A8;
+    color: white;
+}
+.twitter{
+    background: #00ACEE;
+    color:white;
+}
+
+.email{
+    background: blue;
+    color:white;
+}
+.whatsapp{
+    background:#25D366;
+    color:white;
+}
 .footer{
     grid-area:footer;
     grid-column: 1 / span 3;
-    grid-row: 5 / 6;
+    grid-row: 6 / 7;
     align-items: center;
     justify-content: center;
+    color:#FFCD38;
 }
 
 
@@ -183,6 +238,10 @@ h2{font-size: 45px;}
     {color:#E4D8DC}
 
 a[href]:hover{color: #E4D8DC;}
+
+.social-media-icons a:hover{
+    background-color:#FF4949;
+}
 
 :visited {
     color:#2fa8a2;
