@@ -1,9 +1,5 @@
 /*Mobile Devices*/
-@media(max-width: 500px){
-    .nav {
-        height:100px;
-    }
-}
+
 @media screen and (min-width:768px) {
     .box1 .box2 .box3 {
         height:auto;
@@ -70,21 +66,43 @@ h2, h3{font-size: 70px;}
     align-items: start;
 }
 
-.logo{
+/*.logo{
     grid-area: logo;
     grid-column: 1 / 2;
     grid-row: 1 / 1;
     justify-self: start;
     align-self: end;
-}
+    background:#FFF5EB;
+}*/
 
 .nav{
     grid-area: nav;
-    grid-column: 2 / span 3;
+    grid-column:  1 / span 3;
     grid-row: 1 / 1;
     justify-items: center;
     align-items: center;
     font-size: 50px;
+    background: #FFF5EB;
+    width: 100%;
+    
+}
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color: #FFF5EB;
+}
+.navigation{
+    float:center;
+}
+.navigation .link-nav{
+    display:block;
+    color: rgb(68, 68, 68);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 10px;
 }
 
 .box0{
@@ -119,7 +137,7 @@ h2, h3{font-size: 70px;}
     }
 
 .child{
-    width: 49%;
+    width: 32%;
     padding-bottom: 0;
     margin-bottom: 0;
     position: relative;
@@ -210,7 +228,7 @@ h2, h3{font-size: 70px;}
     font-size: 50px;
     float:right;
 }
-
+s
 .linkedin{
     background:#0E76A8;
     color: white;
@@ -229,7 +247,7 @@ h2, h3{font-size: 70px;}
     color:white;
 }
 .CV{
-    background:purple;
+    background:rgb(137, 49, 172);
     color:white;
 }
 
@@ -242,9 +260,13 @@ h2, h3{font-size: 70px;}
     color:#FFCD38;
 }
 
-#link:hover 
+.link-box-3:hover 
     {color:#E4D8DC;
     }
+.link-nav:hover 
+    {color:#E4D8DC;
+    }
+
 
 a[href]:hover{color: #E4D8DC;}
 
