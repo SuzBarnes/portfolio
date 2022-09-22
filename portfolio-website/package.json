@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "prettier": "^2.7.1",
+    "weather-app": "github:SuzBarnes/weather-app"
+  }
+}
